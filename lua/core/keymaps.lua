@@ -1,7 +1,7 @@
--- keymaps.lua
--- NeoVim Config
--- rhdCode0x7x3
--- v0.2 2024-11-11
+-- lua/core/keymaps.lua
+-- Neovim Config
+-- rhdCode0x7C3
+-- v0.3.0 2025-01-18
 
 function Map(mode, lhs, rhs, opts)
     local options = { noremap = true, silent = true }
@@ -34,3 +34,5 @@ Map(
     {desc = "Yank buffer to system clipboard"})
 
 return { Map = Map }
+
+

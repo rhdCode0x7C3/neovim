@@ -1,9 +1,7 @@
--- options.lua
--- NeoVim Config
--- rhdCode0x7c3
--- v0.2 2024-11-11
-
--- Options
+-- lua/core/options.lua
+-- Neovim Config
+-- rhdCode0x7C3
+-- v0.3.0 2025-01-18
 
 -- Leader
 vim.g.mapleader = " "

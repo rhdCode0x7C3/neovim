@@ -1,3 +1,8 @@
+-- after/ftplugin/nushell.lua
+-- Neovim Config
+-- rhdCode0x7C3
+-- v0.3.0 2025-01-18
+
 -- Define fold text function for nushell files
 local function nu_foldtext()
     local foldstart = vim.v.foldstart

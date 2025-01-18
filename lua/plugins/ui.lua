@@ -1,3 +1,8 @@
+-- lua/plugins/ui.lua
+-- Neovim Config
+-- rhdCode0x7C3
+-- v0.3.0 2025-01-18
+
 return {
     {
             "echasnovski/mini.diff",
@@ -26,23 +31,4 @@ return {
             require("mini.icons").setup()
         end,
     },
-    -- {
-    --     "rcarriga/nvim-notify",
-    --     opts = {
-    --         background_colour = "#000000"
-    --     }
-    -- },
-    -- {
-    --     "folke/noice.nvim",
-    --     event = "VeryLazy",
-    --     opts = {
-    --         cmdline = {
-    --             enabled = true,
-    --         }
-    --     },
-    --     dependencies = {
-    --         "MunifTanjim/nui.nvim",
-    --         "rcarriga/nvim-notify",
-    --     }
-    -- },
 }
