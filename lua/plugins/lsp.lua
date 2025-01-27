@@ -1,8 +1,3 @@
--- lua/plugins/lsp.lua
--- Neovim Config
--- rhdCode0x7C3
--- v0.3.0 2025-01-18
-
 return {
     {
         "neovim/nvim-lspconfig",
@@ -12,7 +7,7 @@ return {
         config = function()
             local status, lsp = pcall(require, "lsp")
             if not status then
-                require('lspconfig').lua_ls.setup({})
+                require("lspconfig").lua_ls.setup({})
             else
                 lsp.setup()
             end

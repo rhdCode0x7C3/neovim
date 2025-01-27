@@ -1,8 +1,3 @@
--- lua/plugins/colorscheme.lua
--- Neovim Config
--- rhdCode0x7C3
--- v0.3.0 2025-01-18
-
 local plugins = {
     {
         "catppuccin/nvim",
@@ -10,13 +5,13 @@ local plugins = {
         priority = 1000,
         config = function()
             require("catppuccin").setup({
-                flavour = "macchiato"
+                flavour = "macchiato",
             })
             vim.cmd("colorscheme catppuccin")
         end,
     },
     {
-        "ellisonleao/gruvbox.nvim"
+        "ellisonleao/gruvbox.nvim",
     },
 }
 
@@ -35,7 +30,7 @@ if _G.IsMac then
                     vim.cmd("colorscheme gruvbox")
                 end,
             },
-        }
+        },
     })
 end
 

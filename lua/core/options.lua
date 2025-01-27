@@ -1,8 +1,3 @@
--- lua/core/options.lua
--- Neovim Config
--- rhdCode0x7C3
--- v0.3.0 2025-01-18
-
 -- Leader
 vim.g.mapleader = " "
 vim.g.maplocalleader = ","
@@ -41,10 +36,10 @@ vim.opt.termguicolors = true
 vim.diagnostic.config({
     signs = {
         text = {
-            [vim.diagnostic.severity.ERROR] = '⛔️',
-            [vim.diagnostic.severity.WARN] = '😱',
-            [vim.diagnostic.severity.INFO] = '📘',
-            [vim.diagnostic.severity.HINT] = '🔎',
-        }
-    }
+            [vim.diagnostic.severity.ERROR] = "⛔️",
+            [vim.diagnostic.severity.WARN] = "😱",
+            [vim.diagnostic.severity.INFO] = "📘",
+            [vim.diagnostic.severity.HINT] = "🔎",
+        },
+    },
 })

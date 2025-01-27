@@ -1,13 +1,8 @@
--- lua/plugins/treesitter.lua
--- Neovim Config
--- rhdCode0x7C3
--- v0.3.0 2025-01-18
-
 return {
     {
         "nvim-treesitter/nvim-treesitter",
         build = ":TSUpdate",
-        event = { "BufReadPre", "BufNewFile", },
+        event = { "BufReadPre", "BufNewFile" },
         dependencies = { "nushell/tree-sitter-nu" },
         config = function()
             local configs = require("nvim-treesitter.configs")
@@ -22,7 +17,8 @@ return {
                     "python",
                     "nu",
                     "nix",
-                    "markdown", "markdown_inline"
+                    "markdown",
+                    "markdown_inline",
                 },
                 sync_install = false,
                 highlight = { enable = true },

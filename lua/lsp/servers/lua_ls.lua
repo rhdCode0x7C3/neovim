@@ -1,8 +1,3 @@
--- lua/lsp/servers/nushell.lua
--- Neovim Config
--- rhdCode0x7C3
--- v0.3.0 2025-01-18
-
 local M = {}
 local utils = require("lsp.utils")
 
@@ -13,17 +8,17 @@ function M.setup(on_attach)
         vim.notify("lua-language-server not found", vim.log.levels.WARN)
         return
     end
-    require('lspconfig').lua_ls.setup({
+    require("lspconfig").lua_ls.setup({
         cmd = cmd,
         on_attach = on_attach,
         capabilities = require("blink.cmp").get_lsp_capabilities(),
         settings = {
             Lua = {
                 runtime = {
-                    version = 'LuaJIT',
+                    version = "LuaJIT",
                 },
                 diagnostics = {
-                    globals = { 'vim' },
+                    globals = { "vim" },
                 },
                 workspace = {
                     library = vim.api.nvim_get_runtime_file("", true),
